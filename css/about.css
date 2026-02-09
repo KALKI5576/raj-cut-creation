@@ -66,7 +66,7 @@
 }
 
 /* =========================
-   PARALLAX
+   PARALLAX (DESKTOP REAL / MOBILE SAFE)
    ========================= */
 .parallax {
   height: 80vh;
@@ -74,12 +74,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
 
+/* PREMIUM OVERLAY (DEPTH ON ALL DEVICES) */
+.parallax::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)
+  );
+}
+
+/* OUTSIDE IMAGE */
 .parallax-outside {
   background-image: url("../assets/images/shop-outside.jpg");
 }
 
+/* INSIDE IMAGE */
 .parallax-inside {
   background-image: url("../assets/images/shop-inside.jpg");
 }
@@ -169,7 +183,7 @@
    ========================= */
 @media (max-width: 768px) {
 
-  /* Disable fake parallax on mobile */
+  /* Disable parallax safely */
   .parallax {
     height: 50vh;
     background-attachment: scroll;
@@ -189,8 +203,7 @@
     padding: 60px 20px;
   }
 
-  /* Mobile rhythm fix:
-     image → card → image → card */
+  /* Mobile rhythm fix */
   .about-story,
   .detail-box,
   .review-card {
