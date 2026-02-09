@@ -134,19 +134,34 @@ body.menu-open {
    MOBILE MENU CLOSE BUTTON
    ========================= */
 
+/* =========================
+   FORCE VISIBLE CLOSE (X) BUTTON
+   ========================= */
+
 .menu-close {
-  margin-top: 40px;
-  background: none;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: #f5f5f7;
-  font-size: 1.6rem;
+  position: relative;           /* ensure visible in flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 48px;
+
   width: 56px;
   height: 56px;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  color: #ffffff;               /* force white */
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: 50%;
+
   cursor: pointer;
+  z-index: 10000;               /* above everything */
 }
 
-/* Hide hamburger when menu is open */
-body.menu-open .hamburger {
-  display: none;
+/* Optional hover feedback */
+.menu-close:active {
+  transform: scale(0.96);
 }
