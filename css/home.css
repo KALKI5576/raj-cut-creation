@@ -1,0 +1,50 @@
+/* =========================
+   HERO SECTION – HOME PAGE
+   ========================= */
+
+.hero {
+  min-height: calc(100vh - 120px); /* full screen minus header/footer */
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  max-width: 800px;
+}
+
+/* Main headline */
+.hero h2 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+/* Sub text */
+.hero p {
+  font-size: 1.05rem;
+  color: #8e8e93;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 10px;
+  background: #c9a24d;
+  color: #0f0f10;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover (desktop only) */
+@media (hover: hover) {
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(201, 162, 77, 0.25);
+  }
+}
