@@ -3,32 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | RAJ CUT CREATION</title>
+  <title>Contact Us | RAJ CUT CREATION</title>
 
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <h1 class="brand">RAJ CUT CREATION</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">RAJ CUT CREATION</div>
+
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+    <button class="menu-close" id="menuClose">✕</button>
   </div>
-</header>
 
-<main class="container page">
-  <h2>Contact</h2>
-  <p>WhatsApp us to book your appointment.</p>
-</main>
+  <!-- CONTACT HERO -->
+  <section class="contact-hero container">
+    <h2>Contact Us</h2>
+    <p>Book your cut, ask a question, or walk in anytime.</p>
+  </section>
 
-<footer class="site-footer">
-  <p>© 2026 RAJ CUT CREATION</p>
-</footer>
+  <!-- CONTACT CARD -->
+  <section class="contact container">
+    <div class="contact-card">
 
+      <div class="contact-info">
+        <h3>RAJ CUT CREATION</h3>
+        <p>
+          28, Hala Chemor 1<br />
+          31200 Chemor, Perak
+        </p>
+
+        <p class="contact-hours">
+          ⏰ Mon–Fri: 10:30 AM – 8:30 PM<br />
+          Sat–Sun: 11:00 AM – 7:30 PM
+        </p>
+      </div>
+
+      <!-- WHATSAPP CTA -->
+      <a
+        href="https://wa.me/601111418451"
+        target="_blank"
+        rel="noopener"
+        class="whatsapp-btn"
+      >
+        Chat on WhatsApp
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 RAJ CUT CREATION</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

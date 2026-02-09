@@ -1,0 +1,82 @@
+/* =========================
+   CONTACT HERO
+   ========================= */
+
+.contact-hero {
+  padding: 90px 20px 40px;
+}
+
+.contact-hero h2 {
+  font-size: clamp(34px, 5vw, 48px);
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  color: #bdbdc2;
+  max-width: 420px;
+}
+
+/* =========================
+   CONTACT CARD
+   ========================= */
+
+.contact {
+  padding-bottom: 120px;
+}
+
+.contact-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 36px 32px 42px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  color: #cfcfd4;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.contact-hours {
+  font-size: 14px;
+  color: #a1a1a6;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+   ========================= */
+
+.whatsapp-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f0f10;
+  background: #25d366;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 28px 22px 34px;
+  }
+}
