@@ -6,29 +6,74 @@
   <title>Gallery | RAJ CUT CREATION</title>
 
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <h1 class="brand">RAJ CUT CREATION</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <!-- HEADER (same structure as other pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">RAJ CUT CREATION</div>
+
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <button class="menu-close" id="menuClose">✕</button>
   </div>
-</header>
 
-<main class="container page">
-  <h2>Gallery</h2>
-  <p>Haircuts, styles, and our workspace.</p>
-</main>
+  <!-- PAGE INTRO -->
+  <section class="gallery-hero container">
+    <h2>Our Work</h2>
+    <p>Precision cuts. Clean fades. Real results.</p>
+  </section>
 
-<footer class="site-footer">
-  <p>© 2026 RAJ CUT CREATION</p>
-</footer>
+  <!-- GALLERY GRID -->
+  <section class="gallery container">
+    <div class="gallery-grid">
+      <!-- Images -->
+      <img src="assets/images/gallery/1.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/2.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/3.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/4.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/5.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/6.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/7.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/8.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/9.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/10.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/11.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/12.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/13.jpg" alt="Gallery image" />
+      <img src="assets/images/gallery/14.jpg" alt="Gallery image" />
+    </div>
+  </section>
 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImg" src="" alt="Expanded view" />
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 RAJ CUT CREATION</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 </html>
